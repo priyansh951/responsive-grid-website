@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    height: 600px;
+    padding: 20px;
+    border: 2px solid red;
+    display: grid;
+    gap: 10px;
+    /* this gap can be divided into row gap and coluum gap */
+    row-gap: 20px;
+    column-gap: 10px;
+    grid-template-columns: 200px 200px 200px;
+
+    /* to define diff column width  */
+    /* grid-template-columns: 1fr 1fr; */
+    /* vw or vh changes according to screen size  or can be defined in percentage or in fractions*/
+    /* align-content: center;
+    align-items: center;
+     */
+}
+.box{
+    border: 2px solid green;
+    padding: 12px;
+
+}
+#box-1{
+    background-color: aqua;
+    /* justify-self: end;
+    align-self: end; */
+    /* justify content mtlb horizontal ND allign mtlb vertical */
+
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* alternate way given below */
+    /* ek jyada hi dena hai like 2nd row include krna hai to 3 */
+   /* grid-column: 1/3;
+    grid-row: 1/3; */
+    /* its alternate */
+     grid-area: 1/1/3/3;
+     /* 1 /1 says row amd column starts and 3 /3 kaha tak jayega  */
+     
+} 
